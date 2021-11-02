@@ -1,0 +1,161 @@
+.div-input-with-icon {
+  position: relative;
+}
+
+@mixin input-with-icon {
+  width: 276px;
+  height: 16px;
+  border-radius: 5px;
+  padding: 16px 33px;
+  margin: 4px 0;
+  transition: 0.4s;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 16px;
+  outline: none;
+  @media (max-width: 365px) {
+    width: 256px;
+  }
+}
+@mixin normal-input-without-icon {
+  width: 309px;
+  height: 48px;
+  border-radius: 5px;
+  padding-left: 33px;
+  transition: 0.4s;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 16px;
+  outline: none;
+  @media (max-width: 365px) {
+    width: 289px;
+  }
+}
+@mixin small-input-without-icon {
+  width: 130px;
+  height: 48px;
+  border-radius: 5px;
+  padding-left: 33px;
+  transition: 0.4s;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 16px;
+  outline: none;
+  @media (max-width: 365px) {
+    width: 110px;
+  }
+}
+
+.primary-input-with-icon {
+  @include input-with-icon;
+  border: 1px solid $primary-color;
+}
+
+.secondary-input-with-icon {
+  @include input-with-icon;
+  border: 1px solid $secondary-color;
+}
+
+.primary-input-with-icon::placeholder {
+  color: $primary-color;
+  opacity: 1; /* Firefox */
+}
+
+.secondary-input-with-icon::placeholder {
+  color: $tertiary-color;
+  opacity: 1; /* Firefox */
+}
+
+.primary-input-with-icon:focus {
+  box-shadow: 0 0 6px 0 $primary-color;
+}
+
+.secondary-input-with-icon:focus {
+  box-shadow: 0 0 6px 0 $tertiary-color;
+}
+.primary-normal-input-without-icon {
+  @include normal-input-without-icon;
+  border: 1px solid $primary-color;
+}
+
+.secondary-normal-input-without-icon {
+  @include normal-input-without-icon;
+  border: 1px solid $secondary-color;
+}
+
+.primary-normal-input-without-icon::placeholder {
+  color: $primary-color;
+  opacity: 1; /* Firefox */
+}
+
+.secondary-normal-input-without-icon::placeholder {
+  color: $tertiary-color;
+  opacity: 1; /* Firefox */
+}
+
+.primary-normal-input-without-icon:focus {
+  box-shadow: 0 0 6px 0 $primary-color;
+}
+
+.secondary-normal-input-without-icon:focus {
+  box-shadow: 0 0 6px 0 $tertiary-color;
+}
+.primary-small-input-without-icon {
+  @include small-input-without-icon;
+  border: 1px solid $primary-color;
+}
+
+.secondary-small-input-without-icon {
+  @include small-input-without-icon;
+  border: 1px solid $secondary-color;
+}
+
+.primary-small-input-without-icon::placeholder {
+  color: $primary-color;
+  opacity: 1; /* Firefox */
+}
+
+.secondary-small-input-without-icon::placeholder {
+  color: $tertiary-color;
+  opacity: 1; /* Firefox */
+}
+
+.primary-small-input-without-icon:focus {
+  box-shadow: 0 0 6px 0 $primary-color;
+}
+
+.secondary-small-input-without-icon:focus {
+  box-shadow: 0 0 6px 0 $tertiary-color;
+}
+
+@mixin icon-style {
+  position: absolute;
+  left: 0;
+  top: 13px;
+  padding: 9px 13px;
+  transition: 0.3s;
+}
+
+.email-icon-style {
+  @include icon-style;
+  color: $primary-color;
+}
+
+.password-icon-style {
+  @include icon-style;
+  color: $tertiary-color;
+}
+
+.password-message-style {
+  width: 344px;
+  text-align: end;
+  font-size: 16px;
+  text-decoration: none;
+  color: $primary-color;
+  @media (max-width: 365px) {
+    width: 324px;
+  }
+}
