@@ -1,0 +1,62 @@
+// normal button mixin
+@mixin normal-btn {
+  width: 344px;
+  height: 50px;
+  padding: 0;
+  border-radius: 8px;
+  border: none;
+  font-family: Roboto;
+  font-size: 16px;
+  letter-spacing: -0.408px;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: 0.4s;
+  @media (max-width: 365px) {
+    width: 324px;
+  }
+}
+.normal-btn-primary {
+  @include normal-btn;
+  background: $primary-color;
+}
+.normal-btn-senary {
+  @include normal-btn;
+  background: $senary-color;
+}
+// social media button mixin
+@mixin media-btn {
+  width: 165px;
+  height: 40px;
+  padding: 0;
+  border-radius: 5px;
+  border: none;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #ffffff;
+  transition: 0.4s;
+  @media (max-width: 365px) {
+    width: 155px;
+  }
+}
+.media-btn-quaternary {
+  @include media-btn;
+  background: $quaternary-color;
+}
+.media-btn-quinary {
+  @include media-btn;
+  background: $quinary-color;
+}
+.media-btn-quaternary:hover,
+.media-btn-quinary:hover,
+.normal-btn-primary:hover {
+  filter: brightness(120%);
+  cursor: pointer;
+}
+.media-buttons-div {
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+  @media (max-width: 365px) {
+    width: 320px;
+  }
+}
