@@ -1,6 +1,6 @@
 # Starting the App
 
-Please run `npm install` and `npm start`. Open [http://localhost:3000](http://localhost:3000) to view it n the browser. to access diferent pages please navigate as `http://localhost:3000/[pagename]`.  
+Please run `npm install` and `npm start`. Open [http://localhost:3000](http://localhost:3000) to view it n the browser. to access different pages please navigate as `http://localhost:3000/[pagename]`.  
 
 current available pages:
 - `http://localhost:3000/login`  
