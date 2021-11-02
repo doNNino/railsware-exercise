@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+// custom imports
+import LoginPage from "./components/LoginPage";
+import PasswordPage from "./components/PasswordPage";
+import UpgradePage from "./components/UpgradePage";
+import { BrowserRouter, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-100 h-100 page-main-div">
+      <BrowserRouter>
+        <Route exact path={["/", "login"]} component={LoginPage} />
+        <Route exact path="/password" component={PasswordPage} />
+        <Route exact path="/upgrade" component={UpgradePage} />
+      </BrowserRouter>
     </div>
   );
 }

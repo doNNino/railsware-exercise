@@ -1,0 +1,77 @@
+// imported libraries
+
+@import "bootstrap";
+
+// global variables
+
+$primary-color: #1a4f8b;
+$secondary-color: #c3c3c3;
+$tertiary-color: #767676;
+$quaternary-color: #385c8e;
+$quinary-color: #f14436;
+$senary-color: #bf1541;
+
+// custom scss imports
+
+@import "./styles/inputs.scss";
+@import "./styles/buttons.scss";
+@import "./styles/titles.scss";
+
+html {
+  height: 100%;
+}
+
+body,
+#root {
+  display: flex;
+  min-height: 100%;
+  min-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+* {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.page-main-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.default-margin-top {
+  margin-top: 40px;
+}
+.default-padding-top {
+  padding-top: 40px;
+}
+.login-information-style {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #b0b0b0;
+  margin-top: 60px;
+}
+.password-information-style {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #b0b0b0;
+  margin-top: auto;
+  margin-bottom: 100px;
+}
