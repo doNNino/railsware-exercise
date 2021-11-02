@@ -1,3 +1,12 @@
+# Starting the App
+
+Please run `npm install` and `npm start`. Open [http://localhost:3000](http://localhost:3000) to view it n the browser. to access sepparate pages add `http://localhost:3000/[pagename]`.  
+
+current available pages:
+- `http://localhost:3000/login`  
+- `http://localhost:3000/password`
+- `[http://localhost:3000/upgrade`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
